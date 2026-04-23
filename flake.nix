@@ -51,7 +51,7 @@
           meta = with lib; {
             description = "Terminal-native AI coding agent";
             homepage = "https://github.com/yvgude/lean-ctl";
-            license = licenses.unfree;
+            license = licenses.free;
             platforms = [ "x86_64-linux" "aarch64-darwin" "x86_64-darwin" ];
             mainProgram = "lean-ctl";
           };
