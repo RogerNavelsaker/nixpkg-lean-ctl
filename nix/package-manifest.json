@@ -1,0 +1,30 @@
+{
+  "package": {
+    "repo": "lean-ctl",
+    "version": "0.3.0"
+  },
+  "binary": {
+    "name": "leanctl"
+  },
+  "dist": {
+    "platforms": {
+      "x86_64-linux": {
+        "url": "https://github.com/yvgude/lean-ctl/releases/download/v0.3.0/leanctl-x86_64-unknown-linux-musl.tar.gz",
+        "hash": "sha256-YO/tanqX+oLSLpBlqHJ0jAlAmIX50j26wWli6+ZNgsQ="
+      },
+      "aarch64-darwin": {
+        "url": "https://github.com/yvgude/lean-ctl/releases/download/v0.3.0/leanctl-aarch64-apple-darwin.tar.gz",
+        "hash": "sha256-m18sCPPZaOOCMqHTUTFTFxBZhKOavHxyrwjejik1WGo="
+      },
+      "x86_64-darwin": {
+        "url": "https://github.com/yvgude/lean-ctl/releases/download/v0.3.0/leanctl-x86_64-apple-darwin.tar.gz",
+        "hash": "sha256-oOKIRBC53I6wFGGeA2Aqt1zsjj2kuxi+cFtJDerCgH0="
+      }
+    }
+  },
+  "meta": {
+    "description": "Terminal-native AI coding agent",
+    "homepage": "https://github.com/yvgude/lean-ctl",
+    "licenseSpdx": "Proprietary"
+  }
+}
