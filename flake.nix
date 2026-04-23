@@ -39,6 +39,8 @@
             inherit (srcInfo) url hash;
           };
 
+          licenseFile = ./LICENSE;
+
           nativeBuildInputs = [ pkgs.installShellFiles ];
 
           sourceRoot = ".";
@@ -46,12 +48,16 @@
           installPhase = ''
             mkdir -p $out/bin
             cp leanctl $out/bin/lean-ctl
+            
+            # Include license as required by terms
+            mkdir -p $out/share/doc/lean-ctl
+            cp $licenseFile $out/share/doc/lean-ctl/LICENSE
           '';
 
           meta = with lib; {
             description = "Terminal-native AI coding agent";
             homepage = "https://github.com/yvgude/lean-ctl";
-            license = licenses.free;
+            license = licenses.unfreeRedistributable;
             platforms = [ "x86_64-linux" "aarch64-darwin" "x86_64-darwin" ];
             mainProgram = "lean-ctl";
           };
