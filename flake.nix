@@ -47,7 +47,7 @@
 
           installPhase = ''
             mkdir -p $out/bin
-            cp leanctl $out/bin/lean-ctl
+            cp leanctl $out/bin/leanctl
             
             # Include license as required by terms
             mkdir -p $out/share/doc/lean-ctl
@@ -59,7 +59,7 @@
             homepage = "https://github.com/yvgude/lean-ctl";
             license = licenses.unfreeRedistributable;
             platforms = [ "x86_64-linux" "aarch64-darwin" "x86_64-darwin" ];
-            mainProgram = "lean-ctl";
+            mainProgram = "leanctl";
           };
         };
       }
