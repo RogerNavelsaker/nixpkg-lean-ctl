@@ -1,0 +1,9 @@
+{
+  "kind": "github-release",
+  "upstream": "yvgude/lean-ctl",
+  "tag_prefix": "v",
+  "version_file": "nix/package-manifest.json",
+  "version_jq": ".package.version",
+  "pinned_paths": ["nix/package-manifest.json"],
+  "sync_script": "bash scripts/sync-release.sh"
+}
